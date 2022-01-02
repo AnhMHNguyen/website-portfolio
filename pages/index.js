@@ -101,7 +101,7 @@ export default function Home() {
         <meta name="description" content="Kate Nguyen's website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Main id="main-container" ref={scrollRef} data-scroll-container>
+      <Main id="main-container" ref={scrollRef} data-scroll-container >
         <CustomCursor/>
         <SidebarWrapper
           variants={rotateZVariants}

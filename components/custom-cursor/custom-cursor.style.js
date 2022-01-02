@@ -10,13 +10,15 @@ export const CursorWrapper = styled.div`
 `;
 
 export const CursorSec = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   z-index: 1000;
   pointer-events: none;
   transform: translate3d(0, 0, 0);
   position: fixed;
-  border: 1px solid ${({theme}) => theme.white};
+  /* border: 1px solid ${({ theme }) => theme.pink}; */
+  border: 1px solid #FBFF00;
+  
   mix-blend-mode: difference;
   border-radius: 50%;
   /* text-align: center; */
@@ -32,13 +34,14 @@ export const Cursor = styled.div`
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: fixed;
-  background: ${({theme}) => theme.white};
+  /* background: ${({theme}) => theme.pink}; */
+  background: #FBFF00;
   /* border: 3px solid ${({theme}) => theme.body}; */
   mix-blend-mode: difference;
   transition: width 1s cubic-bezier(0.19, 1, 0.22, 1),
   height 1s cubic-bezier(0.19, 1, 0.22, 1);
   transform-origin: center;
   pointer-events: none;
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
 `;

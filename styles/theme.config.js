@@ -23,17 +23,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    /* background: ${({ theme }) => theme.main}; */
-    /* color:  ${({ theme }) => theme.main}; */
-    /* background: rgb(255,198,198);
-    background: radial-gradient(circle, rgba(255,198,198,1) 0%, rgba(165,189,196,1) 48%, rgba(105,119,131,1) 100%);
-     */
-    /* background: rgb(206,244,255); */
-    /* background: radial-gradient(circle, rgba(206,244,255,1) 0%, rgba(255,198,198,1) 51%, rgba(204,193,203,1) 100%); */
-    /* background: rgb(242,196,216); */
-    /* background: radial-gradient(circle, rgba(242,196,216,1) 0%, rgba(21,41,66,1) 100%); */
-    background: rgb(213,213,213);
-    background: radial-gradient(circle, rgba(213,213,213,1) 0%, rgba(247,156,156,1) 29%, rgba(36,58,84,1) 100%);
+    background-color: ${({ theme }) => theme.main};
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-style: normal;

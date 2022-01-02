@@ -31,6 +31,11 @@ export const ContactWrapper = styled.div`
   justify-content: end;
   gap: 10px;
   /* align-items: center; */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   
 @media only screen and ${device.sm} {
   justify-content: end;

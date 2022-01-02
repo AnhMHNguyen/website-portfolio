@@ -4,10 +4,13 @@ import { device } from '../utils/breakpoint';
 
 export const Container = styled.div`
   overflow-x: hidden;
+  
 `;  
 
 export const Main = styled.main`
   overflow-x: hidden;
+  background: rgb(213,213,213);
+  background: radial-gradient(circle, rgba(213,213,213,1) 0%, rgba(247,156,156,1) 29%, rgba(36,58,84,1) 100%);
 `;
 
 export const SidebarIcon = styled.div`
