@@ -18,11 +18,11 @@ const Contact = React.forwardRef((props, ref) => {
       <ThankWrapper>
         <ThankText>Thank You for visiting!</ThankText>
         <Flex jus="center">
-          <IconWrapper>
+          <IconWrapper target="_blank" href="https://github.com/AnhMHNguyen" rel="noopener noreferrer">
             <Image src="/static/github.svg" alt="github" width={100} height={100} />
-          </IconWrapper>
-          <IconWrapper>
-            <Image src="/static/linkedin.svg" alt="github" width={100} height={100} />
+          </IconWrapper>    
+          <IconWrapper target="_blank" href="https://www.linkedin.com/in/anne-nguyen-b585b9222/" rel="noopener noreferrer">
+            <Image src="/static/linkedin.svg" alt="linkedin" width={100} height={100} />
           </IconWrapper>
         </Flex>
         <EmailText>Email: anhmh.nguyen01@gmail.com</EmailText>

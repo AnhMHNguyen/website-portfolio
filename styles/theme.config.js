@@ -55,8 +55,12 @@ export const GlobalStyles = createGlobalStyle`
   input, textarea, button {
     font-family: inherit
   }
+  a {
+    text-decoration: none;
+  }
   html.has-scroll-smooth {
     overflow: hidden;
+    position: fixed;
   }
 
   html.has-scroll-dragging {

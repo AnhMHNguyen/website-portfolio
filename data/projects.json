@@ -2,46 +2,46 @@
   {
     "id": 1,
     "name": "Jimmie Pet Shop",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    "demoUrl":"",
-    "codeUrl":"",
+    "description": "This project is an Ecommerce website using Django and React with full featured shopping cart, product reviews and ratings, user profile with orders, admin product, user and order management, checkout process and Paypal.",
+    "demoUrl":"https://jimmie-shop.herokuapp.com/",
+    "codeUrl":"https://github.com/AnhMHNguyen/jimmie-shop",
     "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1637275814/images/jimmieshop/jimmie1_dmnoq6.jpg",
     "tools": ["reactjs", "redux", "styledcomponents", "django", "postgresql"]
   },
   {
     "id": 2,
     "name": "Nextflix",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    "demoUrl":"",
-    "codeUrl":"",
-    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1632868526/media/jimmieshop/Toys_ojwak3.png",
+    "description": "This project is a Netflix Clone using YoutubeAPI as video source and NextJS as framework with passwordless authentication using Magic links and user's list of videos.",
+    "demoUrl":"https://next-flix-teal.vercel.app/signin",
+    "codeUrl":"https://github.com/AnhMHNguyen/next-flix",
+    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1641106535/images/jimmieshop/nextflix_lxlikl.jpg",
     "tools": ["nextdotjs", "graphql", "magic", "sass", "postgresql"]
   },
   {
     "id": 3,
     "name": "Music App",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    "demoUrl":"",
-    "codeUrl":"",
-    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1632868541/media/jimmieshop/Furniture_h6nqeu.png",
-    "tools": ["vuedotjs", "firebase"]
+    "description": "This project is a shared music website using VueJS framework allowing users to upload, share, listen and comment on audio.",
+    "demoUrl":"https://music-app-sooty.vercel.app/",
+    "codeUrl":"https://github.com/AnhMHNguyen/music-app",
+    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1641106535/images/jimmieshop/music_oaxnis.jpg",
+    "tools": ["vuedotjs", "firebase", "tailwindcss"]
   },
   {
     "id": 4,
     "name": "Meals To Go",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    "demoUrl":"",
-    "codeUrl":"",
+    "description": "This project is a food take out application using React Native and full featured payment using Stripe. ",
+    "demoUrl":"https://expo.dev/@annenguyen/MealsToGo",
+    "codeUrl":"https://github.com/AnhMHNguyen/MealsToGo",
     "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1632868564/media/jimmieshop/Hats_yot3gm.png",
-    "tools": ["react", "firebase", "styledcomponents"]
+    "tools": ["react", "firebase", "expo", "styledcomponents"]
   },
   {
     "id": 5,
     "name": "Rent and Venues Data Analysis of Vancouver",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    "demoUrl":"",
-    "codeUrl":"",
-    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1633384924/media/jimmieshop/pearlribboncollar_ybmwxt.jpg",
+    "description": "This project is a Capstone Project - The Battles of Neighborhoods for Data Science Course by IBM/Cousera by using a list of data including Zumper, Foursquare API and Google Maps API geocoding to create a map and information chart showing the average rent in Vancouver and each area is clustered according to venue density.",
+    "demoUrl":"https://github.com/AnhMHNguyen/DataScienceCapstone/blob/main/Capstone_Report.pdf",
+    "codeUrl":"https://github.com/AnhMHNguyen/DataScienceCapstone/blob/main/Neighborhoods-in-Toronto.ipynb",
+    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1641106638/images/jimmieshop/results_qdzdlr.jpg",
     "tools": ["python"]
   }
 ]

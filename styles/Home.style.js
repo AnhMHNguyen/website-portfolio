@@ -50,7 +50,7 @@ export const SidebarWrapper = styled(motion.div)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   z-index: 2;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   /* &:hover {
     transform: rotateZ(-25deg);
   } */
@@ -63,12 +63,12 @@ export const SidebarWrapper = styled(motion.div)`
     margin-top: 30px;
   }
   &:hover ${SidebarIcon} {
-    background-color: ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.pink};
     /* width: 40px; */
     /* height: 40px; */
   }
   &:hover ${SidebarText} {
-    color: ${({theme}) => theme.primary};
+    color: ${({theme}) => theme.pink};
   }
 `;
 

@@ -37,8 +37,8 @@ const About = React.forwardRef((props, ref) => {
           initial="initial"
           variants={staggerVariants}
         >
-          <motion.p variants={fadeInUpVariants}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</motion.p>
-          <motion.p variants={fadeInUpVariants}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</motion.p>
+          <motion.p variants={fadeInUpVariants}> Hey! My name is Kate Nguyen. I am a graduate with an Advanced Diploma in Computer Programming and Analysis. My interests are in Web Developer and I love to create beautiful and performant products with delightful user experiences. </motion.p>
+          <motion.p variants={fadeInUpVariants}> I am also a data lover and eager to learn new things everyday.</motion.p>
           <CustomButton onClick={saveFile}>My Resume</CustomButton>
         </TextWrapper>
       </ContentWrapper>

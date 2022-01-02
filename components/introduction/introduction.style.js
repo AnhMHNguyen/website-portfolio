@@ -158,11 +158,15 @@ export const MenuWrapper = styled(motion.div)`
   }
 `;
 
-export const MenuText = styled(motion.p)`
+export const MenuText = styled(motion.span)`
   font-size: 10px;
-  color: ${({ theme }) => theme.gray10};
+  color: ${({ theme }) => theme.gray00};
   /* line-height:0; */
   cursor: pointer;
+
+  &:hover {
+    color: ${({theme}) => theme.pink};
+  }
 
   @media only screen and ${device.sm} {
     font-size: 10px;

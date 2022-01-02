@@ -18,7 +18,7 @@ const Title = ({ subtitle, title }) => {
   }, [inView, animation]);
 
   return (
-    <TitleWrapper data-scroll data-scroll-speed={-1} ref={contentRef}
+    <TitleWrapper ref={contentRef} data-scroll data-scroll-speed={-1}
       animate={ animation } variants={staggerVariants} initial="initial" >
       <SubtitleWrapper>
         <Line>
@@ -29,9 +29,9 @@ const Title = ({ subtitle, title }) => {
             />
           </svg>
         </Line>
-        <Subtitle variants={fadeInDownVariants}>{ subtitle }</Subtitle>
+        <Subtitle variants={fadeInDownVariants} >{ subtitle }</Subtitle>
       </SubtitleWrapper>
-      <TitleText variants={fadeInDownVariants}>{ title }</TitleText>
+      <TitleText variants={fadeInDownVariants} >{ title }</TitleText>
     </TitleWrapper>
   );
 }

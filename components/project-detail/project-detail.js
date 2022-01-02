@@ -32,8 +32,12 @@ const ProjectDetail = ({ project }) => {
           ))}
         </ToolsWrapper>
         <ButtonWrapper id={project.id} variants={fadeInUpVariants}>
-          <CustomButton primary>View Demo</CustomButton>
-          <CustomButton>View Code</CustomButton>
+          <a target="_blank" href={project.demoUrl} rel="noopener noreferrer">
+            <CustomButton component="a" primary>View Demo</CustomButton>
+          </a>
+          <a target="_blank" href={project.codeUrl} rel="noopener noreferrer">
+            <CustomButton>View Code</CustomButton>
+          </a>
         </ButtonWrapper>
       </ContentWrapper>
     </Container>

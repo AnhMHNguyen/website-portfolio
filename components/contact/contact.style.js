@@ -225,7 +225,7 @@ export const ThankText = styled.h1`
   }
 `;
 
-export const IconWrapper = styled.div`
+export const IconWrapper = styled.a`
   width: 7%;
   height: 7%;
 
