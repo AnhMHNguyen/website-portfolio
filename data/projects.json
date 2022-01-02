@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Jimmie Pet Shop",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "demoUrl":"",
+    "codeUrl":"",
+    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1637275814/images/jimmieshop/jimmie1_dmnoq6.jpg",
+    "tools": ["reactjs", "redux", "styledcomponents", "django", "postgresql"]
+  },
+  {
+    "id": 2,
+    "name": "Nextflix",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "demoUrl":"",
+    "codeUrl":"",
+    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1632868526/media/jimmieshop/Toys_ojwak3.png",
+    "tools": ["nextdotjs", "graphql", "magic", "sass", "postgresql"]
+  },
+  {
+    "id": 3,
+    "name": "Music App",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "demoUrl":"",
+    "codeUrl":"",
+    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1632868541/media/jimmieshop/Furniture_h6nqeu.png",
+    "tools": ["vuedotjs", "firebase"]
+  },
+  {
+    "id": 4,
+    "name": "Meals To Go",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "demoUrl":"",
+    "codeUrl":"",
+    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1632868564/media/jimmieshop/Hats_yot3gm.png",
+    "tools": ["react", "firebase", "styledcomponents"]
+  },
+  {
+    "id": 5,
+    "name": "Rent and Venues Data Analysis of Vancouver",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "demoUrl":"",
+    "codeUrl":"",
+    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1633384924/media/jimmieshop/pearlribboncollar_ybmwxt.jpg",
+    "tools": ["python"]
+  }
+]

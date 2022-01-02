@@ -1,0 +1,92 @@
+[
+  {
+    "id": 0,
+    "name": "React",
+    "url":"/static/reactjs.svg"
+  },
+  {
+    "id": 1,
+    "name": "NextJS",
+    "url":"/static/nextdotjs.svg"
+  },
+  {
+    "id": 2,
+    "name": "VueJS",
+    "url":"/static/vuedotjs.svg"
+  },
+  {
+    "id": 3,
+    "name": "React Native",
+    "url":"/static/react.svg"
+  },
+  {
+    "id": 4,
+    "name": "Redux",
+    "url":"/static/redux.svg"
+  },
+  {
+    "id": 5,
+    "name": "HTML5",
+    "url":"/static/html.svg"
+  },
+  {
+    "id": 6,
+    "name": "SASS",
+    "url":"/static/sass.svg"
+  },
+  {
+    "id": 7,
+    "name": "Styled Components",
+    "url":"/static/styledcomponents.svg"
+  },
+  {
+    "id": 8,
+    "name": "Firebase",
+    "url":"/static/firebase.svg"
+  },
+  {
+    "id": 9,
+    "name": "GraphQL",
+    "url":"/static/graphql.svg"
+  },
+  {
+    "id": 10,
+    "name": "NodeJS",
+    "url":"/static/nodejs.svg"
+  },
+  {
+    "id": 11,
+    "name": "Django",
+    "url":"/static/django.svg"
+  },
+  {
+    "id": 12,
+    "name": "PostgresQL",
+    "url":"/static/postgresql.svg"
+  },
+  {
+    "id": 13,
+    "name": "Linux",
+    "url":"/static/linux.svg"
+  },
+  {
+    "id": 14,
+    "name": "Python",
+    "url":"/static/python.svg"
+  },
+  {
+    "id": 15,
+    "name": "Javascript",
+    "url":"/static/javascript.svg"
+  },
+  {
+    "id": 16,
+    "name": "Typescript",
+    "url":"/static/typescript.svg"
+  },
+  {
+    "id": 19,
+    "name": "Figma",
+    "url":"/static/figma.svg"
+  }
+]
