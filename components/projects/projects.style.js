@@ -7,7 +7,7 @@ export const Container = styled.section`
   height: fit-content;
   display: flex;
   flex-direction: column;
-  padding-bottom: 400px;
+  margin-bottom: 400px;
 `;
 
 export const ContentWrapper = styled.div`

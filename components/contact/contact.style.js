@@ -10,8 +10,7 @@ export const Container = styled.section`
   padding-bottom: 5vh;
   flex-direction: column-reverse;
   align-items: center;
-  /* padding-top: 20px; */
-  /* justify-content: center; */
+
   @media only screen and ${device.sm} {
     padding-bottom: 7vh;
   }
