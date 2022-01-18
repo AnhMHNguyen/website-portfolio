@@ -65,11 +65,6 @@
     "url":"/static/postgresql.svg"
   },
   {
-    "id": 13,
-    "name": "Linux",
-    "url":"/static/linux.svg"
-  },
-  {
     "id": 14,
     "name": "Python",
     "url":"/static/python.svg"

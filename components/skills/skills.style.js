@@ -12,7 +12,7 @@ export const Container = styled.section`
 
   @media only screen and ${device.md} {
     margin-top: 200px;
-    margin-bottom: 100;
+    margin-bottom: 100px;
   }
 `;
 

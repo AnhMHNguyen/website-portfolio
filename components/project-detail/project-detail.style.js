@@ -6,7 +6,6 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   
@@ -81,6 +80,17 @@ export const Description = styled(motion.p)`
   
   @media only screen and ${device.sm}{
     font-size: 20px;
+  }
+`;
+
+export const NoteText = styled(motion.p)`
+  color: ${({ theme }) => theme.white10};
+  font-weight: 500;
+  font-size: 13px;
+  font-style: italic;
+  
+  @media only screen and ${device.sm}{
+    font-size: 18px;
   }
 `;
 

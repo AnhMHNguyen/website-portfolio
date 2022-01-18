@@ -49,8 +49,12 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
   html.has-scroll-smooth {
-    overflow: hidden;
     position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 
   html.has-scroll-dragging {

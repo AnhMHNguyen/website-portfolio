@@ -7,13 +7,10 @@ export const Container = styled.section`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1000px;
+  margin-bottom: 150px;
 
   @media only screen and ${device.sm}{
-     margin-bottom: 600px;
-  }
-  @media only screen and ${device.md}{
-     margin-bottom: 400px;
+     margin-bottom: 200px;
   }
 `;
 

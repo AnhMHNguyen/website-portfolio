@@ -4,13 +4,13 @@ import CustomButton from '../custom-button/custom-button';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { staggerVariants, fadeInUpVariants } from '../../utils/animate';
-import { Container, ContentWrapper, ImageWrapper, Img, Title, Description, ToolsWrapper, ButtonWrapper } from './project-detail.style';
+import { Container, ContentWrapper, ImageWrapper, Img, Title, Description,NoteText, ToolsWrapper, ButtonWrapper } from './project-detail.style';
 
 const ProjectDetail = ({ project }) => {
   const animation = useAnimation();
   const [contentRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: '-180px'
+    rootMargin: '-150px'
   });
   useEffect(() => {
     if (inView) {
@@ -26,6 +26,9 @@ const ProjectDetail = ({ project }) => {
       <ContentWrapper ref={contentRef} id={project.id} variants={staggerVariants} initial="initial" animate={animation}>
         <Title variants={fadeInUpVariants}>{project.name}</Title>
         <Description variants={fadeInUpVariants}>{project.description}</Description>
+        {project.note && (
+          <NoteText variants={fadeInUpVariants}>{project.note}</NoteText>
+        ) }
         <ToolsWrapper id={project.id} whileHover={{scale: 1.1}} variants={fadeInUpVariants}>
           {project.tools.map((tool, idx) => (
             <Image key={idx} alt={tool} src={`/static/${tool}.svg`} width={36} height={36} />

@@ -7,7 +7,11 @@ export const Container = styled.section`
   height: fit-content;
   display: flex;
   flex-direction: column;
-  margin-bottom: 400px;
+  margin-bottom: 100px;
+
+  @media only screen and ${device.sm}{
+     margin-bottom: 200px;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -16,7 +20,6 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   width: 100%;
   height: 80%;
-  margin-top: 50px;
 `;
 
 export const ProjectsWrapper = styled.div`

@@ -9,7 +9,7 @@ const Title = ({ subtitle, title }) => {
   const animation = useAnimation();
   const [contentRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: '-100px'
+    rootMargin: '-150px'
   });
   useEffect(() => {
     if (inView) {

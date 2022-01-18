@@ -24,7 +24,7 @@ const Skills = React.forwardRef((props, ref) => {
   const animation = useAnimation();
   const [contentRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: '-200px'
+    rootMargin: '-150px'
   });
   useEffect(() => {
     if (inView) {
