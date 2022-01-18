@@ -6,7 +6,7 @@
     "note": "You might need to download Expo Application from App Store or Google Play to experience this mobile application. ",
     "demoUrl":"https://expo.dev/@katenguyen/FoodToGo",
     "codeUrl":"https://github.com/AnhMHNguyen/FoodToGo",
-    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1642476791/images/FoodToGo/iMac_-_1_i0catk.png",
+    "imgUrl": "/static/food.png",
     "tools": ["react", "firebase", "expo", "stripe"]
   },
   {
@@ -15,7 +15,7 @@
     "description": "This project is a Netflix Clone using YoutubeAPI as video source and NextJS as framework with passwordless authentication using Magic links and user's list of videos.",
     "demoUrl":"https://next-flix-teal.vercel.app/signin",
     "codeUrl":"https://github.com/AnhMHNguyen/next-flix",
-    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1641106535/images/jimmieshop/nextflix_lxlikl.jpg",
+    "imgUrl": "/static/nextflix.jpg",
     "tools": ["nextdotjs", "graphql", "magic", "sass", "postgresql"]
   },
   {
@@ -25,7 +25,7 @@
     "note": "This website might take a couple of minutes to run since it is hosted on Heroku.",
     "demoUrl":"https://jimmie-shop.herokuapp.com/",
     "codeUrl":"https://github.com/AnhMHNguyen/jimmie-shop",
-    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1637275814/images/jimmieshop/jimmie1_dmnoq6.jpg",
+    "imgUrl": "/static/jimmie.jpg",
     "tools": ["reactjs", "redux", "styledcomponents", "django", "postgresql"]
   },
   {
@@ -34,7 +34,7 @@
     "description": "This project is a shared music website using VueJS framework allowing users to upload, share, listen and comment on audio.",
     "demoUrl":"https://music-app-sooty.vercel.app/",
     "codeUrl":"https://github.com/AnhMHNguyen/music-app",
-    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1641106535/images/jimmieshop/music_oaxnis.jpg",
+    "imgUrl": "/static/music.jpg",
     "tools": ["vuedotjs", "firebase", "tailwindcss"]
   },
   {
@@ -43,7 +43,7 @@
     "description": "This project is a Capstone Project - The Battles of Neighborhoods for Data Science Course by IBM/Cousera by using a list of data including Zumper, Foursquare API and Google Maps API geocoding to create a map and information chart showing the average rent in Vancouver and each area is clustered according to venue density.",
     "demoUrl":"https://github.com/AnhMHNguyen/DataScienceCapstone/blob/main/Capstone_Report.pdf",
     "codeUrl":"https://github.com/AnhMHNguyen/DataScienceCapstone/blob/main/Neighborhoods-in-Toronto.ipynb",
-    "imgUrl": "https://res.cloudinary.com/ds4m4cban/image/upload/v1641106638/images/jimmieshop/results_qdzdlr.jpg",
+    "imgUrl": "/static/venue.jpg",
     "tools": ["python"]
   }
 ]
