@@ -2,18 +2,9 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { device } from '../../utils/breakpoint';
 
-// export const Container = styled(motion.div)`
-//   position: fixed;
-//   top:0;
-//   left:0;
-//   width:100%;
-//   height:100%;
-//   background: rgba(0, 0, 0, 0.8);
-//   z-index: 1;
-// `;
-
 export const SidebarWrapper = styled(motion.div)`
-  height: 100%;
+  position: absolute;
+  height: 100vh;
   background-color: ${({ theme }) => theme.body};
   width: 80%;
   max-width: 400px;
@@ -21,7 +12,7 @@ export const SidebarWrapper = styled(motion.div)`
   top:0;
   box-shadow: 1px 0px 7px rgba(0,0,0,0.5);
   z-index: 90;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -60,7 +51,7 @@ export const NavLink = styled.p`
   text-transform:uppercase;
   height:45px;
   line-height:40px;
-  padding-left:60px;
+  padding-left:40px;
   margin-top:40px;
   overflow:hidden;
   
@@ -68,6 +59,7 @@ export const NavLink = styled.p`
   cursor:pointer;
 
   @media only screen and ${device.md} {
+    padding-left:60px;
     font-size: 20px;
     height:30px;
     line-height:40px;
@@ -104,11 +96,14 @@ export const NavLink = styled.p`
 `;
 
 export const ContactWrapper = styled.div`
-  margin-top: 300px;
-  padding-left: 60px;
+  padding-left: 40px;
   padding-right: 60px;
   position: absolute;
-  bottom: 30px;
+  bottom: 100px;
+  @media only screen and ${device.md} {
+    padding-left: 60px;
+    bottom: 30px;
+  }
 `;
 export const Flex = styled.div`
   display: flex;

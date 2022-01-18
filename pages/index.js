@@ -63,6 +63,17 @@ export default function Home() {
         el: scrollRef.current,
         smooth: true,
         multiplier: 1,
+        inertia: 0.8,
+        smartphone: {
+          smooth: true,
+          inertia: 0.8,
+          touchMultiplier: 3
+        },
+        tablet: {
+          smooth: true,
+          inertia: 0.8,
+          touchMultiplier: 3
+        }
       });
       scrollEl.on('scroll', (args) => handleScroll(args.scroll));
       if (router.query.section) {
@@ -95,37 +106,39 @@ export default function Home() {
   }
   
   return (
-    <Container>
-      <Head>
-        <title>Kate Nguyen</title>
-        <meta name="description" content="Kate Nguyen's website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Main id="main-container" ref={scrollRef} data-scroll-container >
-        <CustomCursor/>
-        <SidebarWrapper
-          variants={rotateZVariants}
-          whileHover='hover'
-          whileTap='tap'
-          onClick={openToggle}
-        >
-          <SidebarIcon/>
-          <SidebarText >{ visibleSection ? visibleSection : 'Introduction' }</SidebarText>
-        </SidebarWrapper>
-        <PageWrapper >
-          <Introduction ref={introductionRef} />
-          <Skills ref={skillsRef} />
-          <Projects ref={projectsRef} />
-          <About ref={aboutRef} />
-          <Contact ref={contactRef} />
-        </PageWrapper>
-      </Main>
-      <AnimatePresence
-        initial={false}
-        exitBeforeEnter={true}
-        >
-        {toggleSidebar && <Sidebar onClose={closeToggle}/>}
-      </AnimatePresence>
-    </Container>
+    <>
+      <Container>
+        <Head>
+          <title>Kate Nguyen</title>
+          <meta name="description" content="Kate Nguyen's website" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Main id="main-container" ref={scrollRef} data-scroll-container >
+          <CustomCursor/>
+          <SidebarWrapper
+            variants={rotateZVariants}
+            whileHover='hover'
+            whileTap='tap'
+            onClick={openToggle}
+          >
+            <SidebarIcon/>
+            <SidebarText >{ visibleSection ? visibleSection : 'Introduction' }</SidebarText>
+          </SidebarWrapper>
+          <PageWrapper >
+            <Introduction ref={introductionRef} />
+            <Skills ref={skillsRef} />
+            <Projects ref={projectsRef} />
+            <About ref={aboutRef} />
+            <Contact ref={contactRef} />
+          </PageWrapper>
+        </Main>
+      </Container>
+        <AnimatePresence
+          initial={false}
+          exitBeforeEnter={true}
+          >
+          {toggleSidebar && <Sidebar onClose={closeToggle}/>}
+        </AnimatePresence>
+    </>
   )
 }
