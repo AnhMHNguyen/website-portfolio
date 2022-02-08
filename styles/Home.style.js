@@ -61,6 +61,8 @@ export const SidebarWrapper = styled(motion.div)`
   height: auto;
   top: 0;
   left:0;
+  margin-left: 15px;
+  margin-top: 15px;
 
   @media only screen and ${device.sm} {
     margin-left: 25px;
