@@ -1,9 +1,8 @@
 import { useRef, useEffect } from "react";
 import { CursorWrapper, Cursor, CursorSec } from "./custom-cursor.style";
-import { motion, useViewportScroll, useTransform, useSpring, useMotionValue } from "framer-motion"
+import { motion, useViewportScroll, useTransform, useSpring } from "framer-motion"
 
 const CustomCursor = () => {
-  // const y = useMotionValue(pos);
   const secondaryCursor = useRef(null);
   const mainCursor = useRef(null);
   const { scrollYProgress } = useViewportScroll();
@@ -18,11 +17,11 @@ const CustomCursor = () => {
   });
 
   useEffect(() => {
-    document.addEventListener('mousemove', (event) => {
+    const handleMouse = (event) => {
       const { clientX, clientY } = event;
       const mouseX = clientX;
       const mouseY = clientY;
-
+  
       positionRef.current.mouseX =
         mouseX - secondaryCursor.current.clientWidth / 2;
       positionRef.current.mouseY =
@@ -30,9 +29,13 @@ const CustomCursor = () => {
       mainCursor.current.style.transform = `translate3d(${mouseX -
         mainCursor.current.clientWidth / 2}px, ${mouseY -
         mainCursor.current.clientHeight / 2}px, 0)`;
-    });
+    }
 
-    return () => {};
+    document.addEventListener('mousemove', handleMouse);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouse);
+    };
   }, []);
   
   useEffect(() => {
@@ -59,7 +62,7 @@ const CustomCursor = () => {
     };
     followMouse();
   }, [])
-  // console.log({scrollYProgress})
+
   const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
   const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
   return (

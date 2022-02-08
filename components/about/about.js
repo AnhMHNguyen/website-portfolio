@@ -10,27 +10,35 @@ import { useAnimation } from 'framer-motion';
 import { staggerVariants, fadeInUpVariants } from "../../utils/animate";
 import { ContentWrapper, ImageWrapper, TextWrapper } from "./about.style";
 
-const About = React.forwardRef((props, ref) => {
+const About = ({ setVisibleSection }) => {
   const animation = useAnimation();
   const [contentRef, inView] = useInView({
     triggerOnce: true,
     rootMargin: '-180px'
   });
-  useEffect(() => {
-    if (inView) {
-      animation.start('animate');
-    }
-  }, [inView, animation]);  
+  const [ref2, inView2] = useInView();
+  
   const saveFile = (e) => {
     e.preventDefault();
     saveAs('/static/KateNguyen_Resume.pdf', "KateNguyen_Resume.pdf")
   }
+  useEffect(() => {
+    if (inView) {
+      animation.start('animate');
+    }
+  }, [inView, animation]);
+
+  useEffect(() => {
+    if (inView2) {
+      setVisibleSection('About')
+    }
+  }, [inView2]);
 
   return (
-    <Container data-scroll-section ref={ref} id="about">
+    <Container ref={ref2} id="about">
       <Title subtitle="Some Info" title="About Me" />
       <ContentWrapper>
-        <ImageWrapper src="/static/me.jpg" data-scroll data-scroll-speed={1} alt="me" className={inView && 'reveal'}/>
+        <ImageWrapper src="/static/me.jpg" alt="me" className={inView && 'reveal'} />
         <TextWrapper
           ref={contentRef}
           animate={animation}
@@ -44,7 +52,7 @@ const About = React.forwardRef((props, ref) => {
       </ContentWrapper>
     </Container>
   );
-})
+};
 
 
 export default About;

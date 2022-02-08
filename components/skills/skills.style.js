@@ -17,7 +17,6 @@ export const Container = styled.section`
 `;
 
 export const GridWrapper = styled(motion.div)`
-  margin-top: 20px;
   display: grid;
   width: 93%;
   max-width: 1200px;

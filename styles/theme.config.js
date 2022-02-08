@@ -48,7 +48,7 @@ export const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
-  html.has-scroll-smooth {
+  /* html.has-scroll-smooth {
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -109,5 +109,5 @@ export const GlobalStyles = createGlobalStyle`
   .has-scroll-dragging .c-scrollbar_thumb {
     cursor: -webkit-grabbing;
     cursor: grabbing;
-  }
+  } */
 `;

@@ -6,7 +6,7 @@ export const TitleWrapper = styled(motion.div)`
   width: fit-content;
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  height: 200px;
   padding: 0;
   margin: 50px 30px;
   position: sticky;
@@ -19,7 +19,7 @@ export const TitleWrapper = styled(motion.div)`
     margin: 90px 0 0 100px;
   }
   @media only screen and ${device.lg} {
-    margin: 90px 0 0 200px;
+    margin: 60px 0 0 200px;
   }
 `;
 

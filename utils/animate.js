@@ -56,9 +56,5 @@ export const rotateZVariants = {
   tap: {
     scale: 0.5,
     transition: {duration: 0.1}
-  },
-  hover: {
-    rotateZ: '-20deg',
-    transition: {duration: 0.1}
   }
 }

@@ -1,6 +1,7 @@
 import { SidebarWrapper, NavLink, NavText, ContactWrapper, Flex } from "./sidebar.style";
 import Backdrop from '../backdrop/backdrop';
-import Link from 'next/link';
+// import Link from 'next/link';
+import { Link } from 'react-scroll';
 import { fadeInLeftVariants } from "../../utils/animate";
 
 
@@ -14,35 +15,35 @@ const Sidebar = ({ onClose }) => {
         animate="animate"
         exit="initial"
       >
-        <Link href="/?section=introduction" as='/' passHref scroll={false}>  
+        <Link to="introduction" spy={true} smooth={true} duration={500}>  
           <NavLink>
               <NavText>
                 Introduction
               </NavText>
             </NavLink>
         </Link>
-        <Link href="/?section=skills" as='/' passHref scroll={false}>
+        <Link to="skills" spy={true} smooth={true} duration={500}>
           <NavLink>
             <NavText>
               Skills
             </NavText>
           </NavLink>
         </Link>
-        <Link href="/?section=projects" as='/' passHref scroll={false}>
+        <Link to="projects" spy={true} smooth={true} duration={500}>
           <NavLink>
             <NavText>
               Projects
             </NavText>
           </NavLink>
         </Link>
-        <Link href="/?section=about" as='/' passHref scroll={false}>
+        <Link to="about" spy={true} smooth={true} duration={500}>
           <NavLink>
             <NavText>
               About me
             </NavText>
           </NavLink>
         </Link>
-        <Link href="/?section=contact" as='/' passHref scroll={false}>
+        <Link to="contact" spy={true} smooth={true} duration={500}>
           <NavLink>
             <NavText>
               Contact

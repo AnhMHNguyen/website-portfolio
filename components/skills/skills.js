@@ -3,7 +3,7 @@ import Title from '../title/title';
 import { Container, GridWrapper, IconWrapper, Icon, IconText } from './skills.style';
 import icons from '../../data/skill.json';
 import { useInView } from 'react-intersection-observer';
-import { domAnimation, useAnimation } from 'framer-motion';
+import { useAnimation } from 'framer-motion';
 
 const item = {
   initial: {
@@ -20,25 +20,32 @@ const item = {
   },
 }
 
-const Skills = React.forwardRef((props, ref) => {
+const Skills = ({ setVisibleSection }) => {
   const animation = useAnimation();
   const [contentRef, inView] = useInView({
     triggerOnce: true,
     rootMargin: '-150px'
   });
+  const [ref2, inView2] = useInView();
+
   useEffect(() => {
     if (inView) {
       animation.start('animate');
     }
   }, [inView, animation]);
 
+  useEffect(() => {
+    if (inView2) {
+      setVisibleSection('Skills')
+    }
+  }, [inView2]);
+
   return (
-    <Container data-scroll-section ref={ref} id="skills">
+    <Container ref={ref2} id="skills">
       <Title subtitle="What I can do" title="Skills" />
       <GridWrapper
-        data-scroll data-scroll-speed={1}
         ref={contentRef}
-        animate={ animation }
+        animate={animation}
         initial="initial"
         variants={{
           initial: { opacity: 0 },
@@ -53,13 +60,13 @@ const Skills = React.forwardRef((props, ref) => {
         {icons.map((icon) => (
           <IconWrapper key={icon.id} variants={item}>
             <Icon url={icon.url} />
-            <IconText>{ icon.name}</IconText>
+            <IconText>{icon.name}</IconText>
           </IconWrapper>
         ))}
       </GridWrapper>
     </Container>
   );
-})
+};
 
 
 export default Skills;

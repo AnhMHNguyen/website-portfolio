@@ -20,7 +20,7 @@ const ProjectDetail = ({ project }) => {
 
   return (
     <Container id={project.id}>
-      <ImageWrapper data-scroll className={inView && 'reveal'}>
+      <ImageWrapper className={inView && 'reveal'}>
         <Img url={project.imgUrl} />
       </ImageWrapper>
       <ContentWrapper ref={contentRef} id={project.id} variants={staggerVariants} initial="initial" animate={animation}>

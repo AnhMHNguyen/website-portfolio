@@ -9,8 +9,8 @@ export const Container = styled.section`
   flex-direction: column;
   margin-bottom: 100px;
 
-  @media only screen and ${device.sm}{
-     margin-bottom: 200px;
+  @media only screen and ${device.md}{
+     margin-bottom: 0px;
   }
 `;
 

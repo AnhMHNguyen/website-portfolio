@@ -3,24 +3,31 @@ import { motion } from "framer-motion";
 import { device } from '../utils/breakpoint';
 
 export const Container = styled.div`
-  overflow-x: hidden;
   
 `;  
 
-export const Main = styled.main`
-  overflow-x: hidden;
-  background: rgb(191,142,164);
-  background: radial-gradient(circle, rgba(86,91,115,1)0%,  rgba(232,149,149,1) 45%, rgba(36,58,84,1) 100%);
+export const Main = styled(motion.main)`
+  /* background: rgb(192,142,164);
+  background: linear-gradient(355deg, rgba(192,142,164,1) 0%, rgba(86,91,115,1) 45%, rgba(36,58,84,1) 100%); */
+  /* background: rgb(237,161,171); */
+  background: linear-gradient(355deg, rgba(237,161,171,1) 0%, rgba(86,91,115,1) 45%, rgba(36,58,84,1) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 `;
 
 export const SidebarIcon = styled.div`
   width: 20px;
   height: 20px;
   align-self: center;
+  /* position: relative; */
   mask: url(/static/three-dots-vertical.svg) no-repeat;
   mask-size: contain;
-  background: ${({ theme }) => theme.white10};
-  /* transition: all 0.2s ease-in-out; */
+  background: ${({ theme }) => theme.white};
+
   @media only screen and ${device.md} {
     width: 25px;
     height: 25px;
@@ -33,8 +40,9 @@ export const SidebarIcon = styled.div`
 `;
 
 export const SidebarText = styled(motion.p)`
-  color: ${({ theme }) => theme.white10};
+  color: ${({ theme }) => theme.white};
   font-size: 13px;
+  /* position: relative; */
 
   @media only screen and ${device.md} {
     font-size: 15px;
@@ -47,16 +55,13 @@ export const SidebarText = styled(motion.p)`
 export const SidebarWrapper = styled(motion.div)`
   display: flex;
   position: fixed;
-  align-items: center;
-  margin-left: 20px;
-  margin-top: 20px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
   z-index: 2;
-  /* mix-blend-mode: difference; */
-  /* &:hover {
-    transform: rotateZ(-25deg);
-  } */
+  width: 100%;
+  height: auto;
+  top: 0;
+  left:0;
+
   @media only screen and ${device.sm} {
     margin-left: 25px;
     margin-top: 25px;
@@ -67,8 +72,6 @@ export const SidebarWrapper = styled(motion.div)`
   }
   &:hover ${SidebarIcon} {
     background-color: ${({ theme }) => theme.pink};
-    /* width: 40px; */
-    /* height: 40px; */
   }
   &:hover ${SidebarText} {
     color: ${({theme}) => theme.pink};
@@ -77,13 +80,8 @@ export const SidebarWrapper = styled(motion.div)`
 
 
 export const PageWrapper = styled.div`
-  
   display: flex;
   flex-direction: column;
-  gap: 100px;
-  /* position: relative; */
-  /* height: 100vh; */
-  /* width: 400vw;
-  justify-content: center;
-  align-items: center; */
+  gap: 150px;
+
 `;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../../utils/breakpoint';
 import { motion } from 'framer-motion';
+import { Element } from 'react-scroll'
 
 export const Container = styled.section`
   width: 100vw;
@@ -10,7 +11,7 @@ export const Container = styled.section`
   /* margin-bottom: 200px; */
 `;
 
-export const Circle = styled.div`
+export const Circle = styled(motion.div)`
   width: 87%;
   aspect-ratio:1;
   position: absolute;
@@ -42,7 +43,7 @@ export const Circle = styled.div`
   }
 `;
 
-export const CircleInner = styled.div`
+export const CircleInner = styled(motion.div)`
   width: 87%;
   /* top: -100px; */
   aspect-ratio:1;
@@ -156,6 +157,33 @@ export const MenuWrapper = styled(motion.div)`
     padding-top: 0;
     padding-left: 0px;
   }
+
+  .one {
+    padding-left: 20px;
+    @media only screen and ${device.sm} {
+      padding-left: 30px;
+    }
+    @media only screen and ${device.md} {
+      padding-left: 40px;
+    }
+    @media only screen and ${device.lg} {
+      padding-left: 50px;
+    }
+  }
+
+  
+  .two {
+    padding-left: 8px;
+    @media only screen and ${device.sm} {
+      padding-left: 15px;
+    }
+    @media only screen and ${device.md} {
+      padding-left: 20px;
+    }
+    @media only screen and ${device.lg} {
+      padding-left: 25px;
+    }
+  }
 `;
 
 export const MenuText = styled(motion.span)`
@@ -179,30 +207,7 @@ export const MenuText = styled(motion.span)`
   @media only screen and ${device.lg} {
     font-size: 18px;
   }
-  &:nth-child(1){
-    padding-left: 20px;
-    @media only screen and ${device.sm} {
-      padding-left: 30px;
-    }
-    @media only screen and ${device.md} {
-      padding-left: 40px;
-    }
-    @media only screen and ${device.lg} {
-      padding-left: 50px;
-    }
-  }
-  &:nth-child(2){
-    padding-left: 8px;
-    @media only screen and ${device.sm} {
-      padding-left: 15px;
-    }
-    @media only screen and ${device.md} {
-      padding-left: 20px;
-    }
-    @media only screen and ${device.lg} {
-      padding-left: 25px;
-    }
-  }
+  
 `;
 
 export const MainText = styled(motion.div)`

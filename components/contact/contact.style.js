@@ -10,6 +10,10 @@ export const Container = styled.section`
   padding-bottom: 5vh;
   flex-direction: column-reverse;
   align-items: center;
+  /* position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: -1; */
 
   @media only screen and ${device.sm} {
     padding-bottom: 7vh;
